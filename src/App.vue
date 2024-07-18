@@ -14,19 +14,7 @@
     @touchend="touchEnd"
   >
     <div v-if="!imgLoaded" class="title">
-      <div>SuperResolution in Your Browser</div>
-      <img
-        style="
-          width: 50px;
-          display: block;
-          margin: auto;
-          transform: translate(-18%, 0);
-        "
-        src="/demo/2.png"
-        alt="favicon"
-        class="favicon"
-        @click="testdemo"
-      />
+      <div>本地修复图片高分辨率</div>
     </div>
     <canvas ref="canvas"></canvas>
     <canvas ref="imgCanvas" style="display: none"></canvas>
@@ -129,15 +117,6 @@
           class="_main-wave_vzxu7_113"
         ></path>
       </svg>
-      <div class="demo">
-        <div>No ideas? Try one of these:</div>
-        <br />
-        <div>
-          <img class="demoimg" src="/demo/1.jpg" alt="demo" @click="testdemo" />
-          <img class="demoimg" src="/demo/2.jpg" alt="demo" @click="testdemo" />
-          <img class="demoimg" src="/demo/3.jpg" alt="demo" @click="testdemo" />
-        </div>
-      </div>
     </div>
     <!-- <div v-if="!imgLoaded" class="placeholder"></div> -->
   </div>
